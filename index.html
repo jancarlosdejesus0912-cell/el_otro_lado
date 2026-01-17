@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Dimensión Donde el Miedo Respira</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-main: #c0c0c0;
+            --accent-red: #a60000;
+            --glow-red: #ff3333;
+            --font-title: 'Cinzel', serif;
+            --font-body: 'Lato', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* PORTADA */
+        #hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(to bottom, rgba(166, 0, 0, 0.4), var(--bg-color)),
+                        url('image_91651f.jpg'); /* Imagen del cartel principal */
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--accent-red);
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-family: var(--font-title);
+            text-shadow: 0 0 20px var(--accent-red);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-red);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        /* CONTENEDOR */
+        .container { max-width: 900px; margin: 0 auto; padding: 5rem 1.5rem; }
+
+        section { margin-bottom: 6rem; }
+
+        h2 {
+            font-family: var(--font-title);
+            color: var(--accent-red);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-red);
+            padding-left: 1rem;
+        }
+
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; text-align: justify; }
+
+        .image-box {
+            width: 100%;
+            height: 450px;
+            margin: 2rem 0;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border: 1px solid #1a1a1a;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%) contrast(110%);
+            transition: 0.8s ease;
+        }
+
+        .image-box:hover img {
+            filter: grayscale(0%) brightness(110%);
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: #000;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--accent-red);
+        }
+
+        .flicker {
+            animation: flicker-text 5s infinite;
+        }
+
+        @keyframes flicker-text {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+            20%, 22%, 24%, 55% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="hero">
+        <h1 class="hero-title flicker">La Dimensión Donde el Miedo Respira</h1>
+        <div class="hero-subtitle">Crónica del Otro Lado</div>
+    </header>
+
+    <main class="container">
+        
+        <section>
+            <h2>El Silencio de Hawkins</h2>
+            <p>
+                Apenas mis pies tocaron el suelo viscoso de este lugar, el mundo que conocía se desvaneció tras una neblina de estática. No fue el miedo lo primero que sentí, sino una soledad tan absoluta que me oprimía los pulmones. Caminar por Hawkins en este estado es como habitar una pesadilla que ha olvidado cómo terminar; cada paso que doy se siente pesado, como si el aire mismo tuviera la densidad del agua estancada. Siento una presión constante en las sienes y un frío que no nace del clima, sino de la ausencia total de vida. Miro a mi alrededor y reconozco las calles, pero mi mente se niega a aceptarlas.
+            </p>
+            <div class="image-box">
+                <img src="image_916802.jpg" alt="[Paisaje de Hawkins en el Otro Lado]">
+            </div>
+            <p>El aire es rancio, con un regusto metálico que me quema la garganta. Del cielo caen esas partículas grises que se pegan a mi piel como escamas de un incendio antiguo. Las raíces negras palpitan bajo mis botas, y puedo jurar que responden a los latidos de mi corazón, extendiéndose como venas hambrientas por el asfalto agrietado.</p>
+        </section>
+
+        <section>
+            <h2>La Sombra que Espera</h2>
+            <div class="image-box">
+                <img src="image_916823.jpg" alt="[Bosque oscuro y tenebroso]">
+            </div>
+            <p>No estoy solo; lo noto en el vello erizado de mi nuca. Siento miradas que carecen de ojos acechándome desde el espesor de un bosque que parece hecho de ceniza y rencor. Escucho un rugido lejano, una vibración que más que oírse, se siente en el estómago. En este rincón de la nada, mi sombra parece tener más peso que yo mismo.</p>
+        </section>
+
+        <section>
+            <h2>Reflejos de la Realidad</h2>
+            <p>Me detengo frente a lo que solía ser un lugar de risas y ahora mi reflejo en el cristal no me devuelve la mirada. El columpio del parque chirría en un ritmo macabro, movido por un viento que no sopla. Entiendo finalmente que el Otro Lado no es un lugar, es un parásito emocional que ha calcado nuestra realidad para atraparnos en nuestras propias debilidades.</p>
+            <div class="image-box">
+                <img src="image_916862.jpg" alt="[Entorno urbano abandonado y corrompido]">
+            </div>
+        </section>
+
+        <section>
+            <h2>Lo Desconocido Acecha</h2>
+            <p>Nosotros, como observadores, también entramos en este mundo. Caminamos por Hawkins al revés y sentimos la tensión de no saber qué puede aparecer tras la siguiente esquina. El Otro Lado representa los miedos que no vemos, esos que crecen en silencio hasta volverse más fuertes. Es la prueba de que lo desconocido siempre está más cerca de lo que creemos.</p>
+            <div class="image-box">
+                <img src="image_91653c.jpg" alt="[Criatura en la oscuridad]">
+            </div>
+        </section>
+
+        <section>
+            <h2>El Regreso</h2>
+            <p>Al cruzar de nuevo la grieta, el ruido del mundo real me golpeó como una bofetada. El aire volvió a ser dulce, pero mis pulmones ya no saben cómo procesarlo. Hawkins sigue igual, pero yo cargo con el peso de la estática en los huesos. Sé que, aunque mis ojos vean el sol, una parte de mi alma sigue allí, escuchando el latido de las raíces.</p>
+            <div class="image-box">
+                <img src="image_91653c.jpg" alt="[Grieta dimensional]">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 creado por Jan Carlos. <br>
+        <span style="color:var(--accent-red); letter-spacing: 2px;">LA ESTÁTICA NUNCA SE VA DEL TODO.</span>
+    </footer>
+
+</body>
+</html>
